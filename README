@@ -1,0 +1,14 @@
+###### README ######
+
+This program reads corpus.txt file in order to fill the confusion matrix for training.
+
+We have used two main correctors in this project. 
+
+First one uses the language model, based on Norvig's corrector. You can test your input by calling "correction1(input)" method.
+Second one is based on noisy channel model. You can see the correct result of your misspelled word by calling "correction2(input)".
+
+You can test your list of misspelled words by giving input as a ".txt" file. 
+
+In the end of spell.py , you can write down your list of misspelled words file into the variable "missWords" and the list of correct words into "corrWords". After executing the testCorrection function, you can see the results accordingly.
+
+If you want to run the tests on the language model, you should comment out the line 267 and comment in 266. This way, we are simply ignoring the probabilities from confusion matrix.
